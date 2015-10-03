@@ -50,14 +50,14 @@
 				/* Act on the event */
 				var nameWork = $(this).attr('href');
 				console.log(nameWork);
-				$('.detail-work').remove();
-				$(this).parents('.works').prepend('<div class="detail-work"/>');
+				//$('.detail-work').remove();
+				//$(this).parents('.works').prepend('<div class="detail-work"/>');
 
-				$('.detail-work').html(spinner).load('works/'+ nameWork +'.html');
+				//$('.detail-work').html(spinner).load('works/'+ nameWork +'.html');
 
-				$('html, body').animate({
-	          scrollTop: workHeight
-	      }, 300);
+				//$('html, body').animate({
+	          //scrollTop: workHeight
+	      //}, 300);
 			});
 		});
 	}
@@ -98,7 +98,7 @@
 		skill();
 		smoothScroll(300);
 		$body.niceScroll();
-		work();
+		//work();
 		clickBtn();
 
 		$btnNav.click(function() {
