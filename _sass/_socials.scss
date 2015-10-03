@@ -1,0 +1,37 @@
+.socials {
+	text-align: center;
+	color: #fff;
+
+	p {
+		font-size: 25px
+	}
+
+	.facebook, .google-plus, .twiter {
+		background-image: url(/images/social.png);
+		padding-bottom: 4%;
+	}
+
+	.facebook {
+		background-color: #45619D;
+
+		a {
+			color: #45619D;
+		}
+	}
+
+	.google-plus {
+		background-color: #DB4437;
+
+		a {
+			color: #DB4437;
+		}
+	}
+
+	.twiter {
+		background-color: #4A9BDA;
+
+		a {
+			color: #4A9BDA;
+		}
+	}
+}

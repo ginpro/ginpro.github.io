@@ -1,0 +1,67 @@
+.articles {
+	background: #eee url(../images/article-bg.jpg);
+	.list-post-thum {
+		a {
+			display: block;
+			width: 25%;
+			float: left;
+			position: relative;
+			background-size: cover;
+			background-position: 50% 50%;
+			z-index: 1;
+
+			&.is-animate {
+				-webkit-animation-name: tada;
+				animation-name: tada;
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+				z-index: 99;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				padding-top: 100%;
+			}
+
+			.article-meta {
+				opacity: 0;
+				transform: scale(0);
+				position: absolute;
+				background: rgba(yellow, .9);
+				padding: 10px;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				transition: all .3s ease-in-out;
+
+				h3 {
+					color: #141414;
+					margin: 0;
+					font-size: 15px;
+					font-weight: 500;
+				}
+
+				span {
+					font-size: 13px;
+					font-weight: 500;
+					color: #756F6F;
+				}
+			}
+
+			&:hover {
+				.article-meta {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+
+
+

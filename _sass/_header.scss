@@ -1,0 +1,45 @@
+.header {
+  width: 135px;
+  background: #eeeeee;
+  .header-container {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    bottom: 30px;
+    width: 135px;
+    height: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: #999999;
+    font-weight: 500;
+    font-size: 14px;
+    &:hover {
+      color: #383838;
+    }
+  }
+  .logo {
+    margin: 0 20px 0 0;
+    text-align: right;
+    font-size: 65px;
+  }
+  .main-nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 100%;
+    margin-top: -88px;
+    ul {
+      list-style: none;
+      text-align: right;
+      line-height: 35px;
+    }
+  }
+  .mail-to {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
+}

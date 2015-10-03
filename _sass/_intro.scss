@@ -1,0 +1,18 @@
+.intro {
+	background: url(/images/slider4.jpg) no-repeat top center;
+	background-size: cover;
+	min-height: 450px;
+
+	.text-intro {
+		max-width: 500px;
+		margin: 100px auto 0;
+		padding: 0 30px;
+		h2 {
+			margin: 0;
+			padding: 0;
+			text-indent: -0.8em;
+			font-size: 36px;
+			font-weight: 500;
+		}
+	}
+}
