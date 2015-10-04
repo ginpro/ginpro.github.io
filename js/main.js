@@ -6,7 +6,7 @@
 			$btnNav = $('.btn-nav'),
 			$this = $(this),
 			$gridItem = $('.grid-item');
-			
+
 
 	function skill() {
 		var $skill = $('.skill-bar');
@@ -19,10 +19,10 @@
 			$(this).find('.number').text($number).css('left', $number);
 			$(this).children('.bar').css('width', $number);
 		});
-	}	
+	}
 
 	function articleTada(){
-	  var randNum = Math.floor(Math.random() * $('.article-thumb').length) +1;
+	  var randNum = Math.floor(Math.random() * $('.article-thumb').length);
 	  $('.article-thumb').eq(randNum).addClass('is-animate')
 	    .siblings().removeClass('is-animate');
 	}
@@ -66,22 +66,22 @@
 	var element, circle, d, x, y;
 	$(".btn span").hover(function(e){
 		element = $(this);
-	  
+
 		if(element.find(".circle").length == 0)
 			element.prepend("<span class='circle'></span>");
-			
+
 		circle = element.find(".circle");
 		circle.removeClass("animate");
-		
+
 		if(!circle.height() && !circle.width())
 		  {
 				d = Math.max(element.outerWidth(), element.outerHeight());
 				circle.css({height: d, width: d});
 			}
-			
+
 			x = e.pageX - element.offset().left - circle.width()/2;
 			y = e.pageY - element.offset().top - circle.height()/2;
-			
+
 			circle.css({top: y+'px', left: x+'px'}).addClass("animate");
 		},
 		function() {
@@ -115,10 +115,3 @@
 
 	});
 })(jQuery);
-
-
-
-
-
-
-
