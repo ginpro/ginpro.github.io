@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Welcome to Jekyll!"
 thumnail:  "post-2.png"
 date:   2015-10-03 17:20:25
