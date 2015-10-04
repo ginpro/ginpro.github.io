@@ -30,7 +30,6 @@ layout: default
                 <p>Html/Css</p>
                 <div data-skill="90%" class="skill-bar"></div>
               </div>
-<<<<<<< HEAD
               <div class="skill">
                 <p>Javascript</p>
                 <div data-skill="80%" class="skill-bar"></div>
@@ -39,12 +38,12 @@ layout: default
                 <p>UX/UI</p>
                 <div data-skill="65%" class="skill-bar"></div>
               </div>
-=======
             </div>
           </div>
         </section>
         <section id="works" class="section works">
-          <div class="group-works grid"><a href="work1" style="background-image: url(/homepage/images/works/portfolio_img_0002_Layer-13.jpg" class="grid-item grid-item-1">
+          <div class="group-works grid">
+            <a href="work1" style="background-image: url(/homepage/images/works/portfolio_img_0002_Layer-13.jpg" class="grid-item grid-item-1">
               <div class="inner-work">
                 <h3>Work 1</h3>
               </div></a><a href="#" style="background-image: url(/homepage/images/works/portfolio_img_0003_Layer-12.jpg" class="grid-item grid-item-2">
@@ -77,7 +76,8 @@ layout: default
               </div></a><a href="#" style="background-image: url(/homepage/images/works/portfolio_img_0006_Layer-9.jpg" class="grid-item grid-item-4">
               <div class="inner-work">
                 <h3>Work 1 </h3>
-              </div></a></div>
+              </div></a>
+            </div>
         </section>
         <section class="space">
           <div class="text-center">
@@ -93,44 +93,15 @@ layout: default
               </div>
             </div>
             <div class="col-1 no-padding pull-left">
-              <div class="list-post-thum"><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/1_1x.png" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/smiths_1x.png" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a><a href="#" style="background-image: url(/homepage/images/steak_exploration.jpg" class="article-thumb">
-                  <div class="article-meta">
-                    <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                  </div></a></div>
->>>>>>> gh-pages
+              <div class="list-post-thum">
+                {% for post in site.posts %}
+                  <a href="/homepage{{post.url}}" style="background-image: url(/homepage/images/{{post.thumnail}}" class="article-thumb">
+                    <div class="article-meta">
+                      <h3 class="name">{{post.title}}</h3><span class="date">{{post.date}}</span>
+                    </div>
+                  </a>
+                {% endfor %}
+              </div>
             </div>
           </div>
         </div>
@@ -182,7 +153,6 @@ layout: default
             <div class="section-intro inner">
               <h3> ...lorem ipsum dolor sit amet...</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum totam eaque voluptatibus voluptatem neque sit...</p>
-              <a href="#" class="btn">View all post</a>
             </div>
           </div>
           <div class="col-1 no-padding pull-left">
@@ -194,43 +164,6 @@ layout: default
                 </div>
               </a>
              {% endfor %}
-              <!-- <a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/1_1x.png" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/smiths_1x.png" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a><a href="#" style="background-image: url(/images/steak_exploration.jpg" class="article-thumb">
-                <div class="article-meta">
-                  <h3 class="name">fnsdf fsdf fs </h3><span class="date">27-08-2015</span>
-                </div></a> -->
             </div>
           </div>
         </div>
