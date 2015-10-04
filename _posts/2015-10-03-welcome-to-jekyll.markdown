@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "post 2"
 thumnail:  "post-2.png"
 date:   2015-10-03 17:20:25
 ---
