@@ -34,7 +34,7 @@
 		}
 
 		span {
-			left: 5px;
+			left: 10px;
 
 			&::after, &::before {
 				content: "";
@@ -43,7 +43,7 @@
 
 		span, span::after, span::before {
 			display: inline-block;
-			width: 40px;
+			width: 30px;
 			height: 2px;
 			background: #383838;
 			position: absolute;
@@ -176,8 +176,3 @@
 		}
 	}
 }
-
-
-
-
-
