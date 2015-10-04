@@ -99,7 +99,7 @@ layout: default
           <div class="col-1 no-padding pull-left">
             <div class="list-post-thum">
               {% for post in site.posts %}
-                <a href="/homepage{{post.url}}" style="background-image: url(/homepage/images/{{post.thumnail}}" class="article-thumb">
+                <a href="/homepage{{post.url}}" style="background-image: url(/homepage/images/post/{{post.thumnail}}" class="article-thumb">
                   <div class="article-meta">
                     <h3 class="name">{{post.title}}</h3><span class="date">{{post.date | date: "%b %d, %Y"}}</span>
                   </div>
