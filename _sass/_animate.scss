@@ -127,7 +127,7 @@
 .circle {
   display: block ;
   position: absolute;
-  background: rgba(0,0,0,.075);
+  background: rgba(0,0,0,.09);
   border-radius: 50%;
   transform: scale(0);
 
@@ -142,4 +142,3 @@
     transform: scale(2.5);
   }
 }
-
